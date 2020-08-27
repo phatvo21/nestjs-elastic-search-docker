@@ -1,4 +1,4 @@
-* This is demo application apply 3-Tier architecture and design patterns in NestJS Framework
+* Implement Elasticsearch in NestJS in a real-world project and run on Docker 
 
 * Follow these steps below to make sure the application running in the correct way
 
@@ -16,8 +16,6 @@
   + Run the command `npm run build:prod` to starting production the application 
 - Run the application in Docker Environment (Currently, this point to development environment)
   + Make sure your local machine has been installed the Docker
-  + Run the command `docker network create nginx-proxy` to create an external proxy container
-  + Run the command `docker run -d -p 80:80 --net nginx-proxy -v /var/run/docker.sock:/tmp/docker.sock jwilder/nginx-proxy` to start nginx-proxy in port 80
   + Run the command `docker-compose up` to starting development the application
   + Note*: There are some others docker command need to hand on your self
 
