@@ -5,4 +5,6 @@ export interface ProductServiceInterface {
   create(productDto: CreateProductDto): Promise<Product>;
 
   update(productId: any, updateProduct: any): Promise<Product>;
+
+  search(q: any): Promise<any>;
 }
