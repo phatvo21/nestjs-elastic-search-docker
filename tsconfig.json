@@ -10,6 +10,15 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@services/*": ["src/services/*"],
+      "@constant/*": ["src/constant/*"],
+      "@database/*": ["src/database/*"],
+      "@observers/*": ["src/observers/*"],
+      "@repositories/*": ["src/repositories/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }]
   }
 }

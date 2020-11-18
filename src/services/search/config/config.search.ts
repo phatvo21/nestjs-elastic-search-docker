@@ -4,7 +4,7 @@ export class ConfigSearch {
       node: url,
       maxRetries: 5,
       requestTimeout: 60000,
-      sniffOnStart: true,
+      sniffOnStart: true
     };
   }
 }

@@ -1,12 +1,12 @@
-import { Module } from '@nestjs/common';
-import { SearchService } from './search.service';
-import { SearchServiceInterface } from './interface/search.service.interface';
+import { Module } from "@nestjs/common";
+import { SearchService } from "@services/search/search.service";
+import { SearchServiceInterface } from "@services/search/interface/search.service.interface";
 
 @Module({
   imports: [],
   providers: [
     {
-      provide: 'SearchServiceInterface',
+      provide: "SearchServiceInterface",
       useClass: SearchService
     }
   ],
